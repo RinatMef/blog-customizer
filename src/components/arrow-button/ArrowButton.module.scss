@@ -28,3 +28,13 @@
 .arrow_open {
 	transform: rotate(0deg);
 }
+
+.arrow:hover,
+.container:hover {
+	background: var(--gold, #ffc802);
+}
+
+.arrow:active,
+.container:active {
+	background-color: var(--grey, #787878);
+}
