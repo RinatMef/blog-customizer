@@ -23,7 +23,7 @@ export const ArrowButton: React.FC<ArrowButtonProps> = ({
 			onClick={onClick}>
 			<img
 				src={arrow}
-				alt='иконка стрелочки'
+				alt='иконка стрелочки.'
 				className={clsx(styles.arrow, { [styles.arrow_open]: isOpen })}
 			/>
 		</div>
