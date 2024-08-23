@@ -13,10 +13,6 @@ import { ArticleParamsForm } from '../article-params-form';
 const App = () => {
 	const [style, setStyle] = useState<ArticleStateType>(defaultArticleState);
 
-	const setUserSettings = (styles: ArticleStateType) => {
-		setStyle(styles);
-	};
-
 	return (
 		<div
 			className={clsx(styles.main)}
@@ -29,7 +25,7 @@ const App = () => {
 					'--bg-color': style.backgroundColor?.value || 'initial',
 				} as CSSProperties
 			}>
-			<ArticleParamsForm articleStyles={setUserSettings} />
+			<ArticleParamsForm articleStyles={(styles) => setStyle(styles)} />
 			<Article />
 		</div>
 	);
