@@ -93,5 +93,7 @@
 			"path": "./node_modules/cz-conventional-changelog"
 		}
 	},
-	"homepage": "https://rinatmef.github.io/blog-customizer/"
+	"homepage": "",
+	"description": "## Шаг первый. Изучаем имеющиеся компоненты",
+	"author": ""
 }

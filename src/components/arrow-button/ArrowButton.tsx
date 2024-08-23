@@ -3,16 +3,14 @@ import arrow from 'src/images/arrow.svg';
 import styles from './ArrowButton.module.scss';
 import clsx from 'clsx';
 
-/** Функция для обработки открытия/закрытия формы */
-
 interface ArrowButtonProps {
-	onClick: (event: React.MouseEvent) => void;
 	isOpen: boolean;
+	onClick: (event: React.MouseEvent) => void;
 }
 
 export const ArrowButton: React.FC<ArrowButtonProps> = ({
-	onClick,
 	isOpen,
+	onClick,
 }) => {
 	return (
 		<div
@@ -23,7 +21,7 @@ export const ArrowButton: React.FC<ArrowButtonProps> = ({
 			onClick={onClick}>
 			<img
 				src={arrow}
-				alt='иконка стрелочки.'
+				alt='Иконка стрелочки.'
 				className={clsx(styles.arrow, { [styles.arrow_open]: isOpen })}
 			/>
 		</div>
